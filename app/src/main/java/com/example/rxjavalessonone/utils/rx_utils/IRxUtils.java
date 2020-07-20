@@ -7,8 +7,8 @@ import com.example.rxjavalessonone.model.UserEntity;
 
 import java.util.List;
 
-import rx.Observable;
-import rx.Observer;
+import io.reactivex.Observable;
+import io.reactivex.Observer;
 
 public interface IRxUtils {
 
@@ -32,7 +32,7 @@ public interface IRxUtils {
 
     void introductionCombineLatestOperator(EditText editTextLogin, EditText editTextPassword);
 
-    void introductionSubscribeOnWithObserveOnOperators(Observable observable);
+    void introductionSubscribeOnWithObserveOnOperators();
 
     void introductionPublishSubject();
 
@@ -42,7 +42,7 @@ public interface IRxUtils {
 
     void introductionAsyncSubject();
 
-    Observer<Integer> getFirsObserver();
+    Observer<Integer> getFirstObserver();
 
     Observer<Integer> getSecondObserver();
 }
